@@ -23,39 +23,6 @@ const Contextprovider = (props) => {
     setSelectedImage(null); // Clear selected image on new chat
   };
 
-  // const onSent = async (prompt) => {
-  //   setresultData("");
-  //   setloading(true);
-  //   setshowResult(true);
-  //   let response;
-  //   if (prompt !== undefined) {
-  //     response = await run(prompt, selectedImage); // Pass selected image to the run function
-  //     setrecentprompt(prompt);
-  //   } else {
-  //     setprevPrompt((prev) => [...prev, input]);
-  //     setrecentprompt(input);
-  //     response = await run(input, selectedImage); // Pass selected image to the run function
-  //   }
-
-  //   let responseArray = response.split("**");
-  //   let newresponse = "";
-  //   for (let i = 0; i < responseArray.length; i++) {
-  //     if (i === 0 || i % 2 !== 1) {
-  //       newresponse += responseArray[i];
-  //     } else {
-  //       newresponse += "<b>" + responseArray[i] + "</b>";
-  //     }
-  //   }
-  //   let newresponse2 = newresponse.split("*").join("</br>");
-  //   let newResponseArray = newresponse2.split(" ");
-  //   for (let i = 0; i < newResponseArray.length; i++) {
-  //     const nextWord = newResponseArray[i];
-  //     delaypara(i, nextWord + " ");
-  //   }
-  //   setloading(false);
-  //   setinput("");
-  // };
-
   const onSent = async (prompt, image) => {
     setresultData("");
     setloading(true);

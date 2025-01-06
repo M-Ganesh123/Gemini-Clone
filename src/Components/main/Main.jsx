@@ -43,7 +43,7 @@ const Main = () => {
           <>
             <div className="greet">
               <p>
-                <span>Hello, Dev</span>
+                <span>Hello, Ganesh</span>
               </p>
               <p>How can i help you today?</p>
             </div>
@@ -95,7 +95,7 @@ const Main = () => {
               onChange={(e) => setinput(e.target.value)}
               value={input}
               type="text"
-              placeholder="Enter a prompt here"
+              placeholder="Enter a prompt ..."
             />
             <div>
               <img
